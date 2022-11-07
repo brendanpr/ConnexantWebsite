@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+
+</head>
+<body>
+<!--
+<p style="background-image: url('
+-->
+<div id="TopNavBar">
+	<a href="index.html" rel="noopener no referrer">Home</a>
+	<a href="Services.html" rel="noopener no referrer" onclick="return false;">Services</a>
+	<a href="Contact.html" rel="noopener no referrer">Contact</a>
+	<p style="float: left; color: white; padding-left: 15px;">Connexant</p>
+</div>
+
+<section id="MainHeadingSection">
+<h1 id="MainHeading">Connexant</h1>
+<h3 style="text-align: center">A Managed Service Provider</h3>
+</section>
+
+<section class="HeadingSectionBlueNetworking">
+	<h2 style="text-align: left;">Network Engineering</h2>
+	<p><br>
+	In 2020 the need for IT services was more important than ever. The pandemic changed the way that IT professionals work.
+	</p>
+	<img id="NetworkImage" src="NetworkEngineering.jpg" alt="Networking Equipment">
+</section>
+
+<section class="HeadingSection">
+	<h2 style="text-align: left;">System Engineering</h2>
+	<p>
+	In 2020 the need for IT services was more important than ever. The pandemic changed the way that IT professionals work. Managed Service Providers are the back bone of small IT companies around the country. With services like Network Engineering, System Engineering, and fully staffed help desk that operates 24/7, it's no wonder why Connexant is picked over others.
+	</p>
+</section>
+
+<section class="HeadingSectionBlue">
+	<h2 style="text-align: left;">Security Engineering</h2>
+	<p>
+	In 2020 the need for IT services was more important than ever. The pandemic changed the way that IT professionals work.
+	</p>
+</section>
+
+<section class="HeadingSection">
+	<h2 style="text-align: left;">Help Desk</h2>
+	<p>
+	In 2020 the need for IT services was more important than ever. The pandemic changed the way that IT professionals work. Managed Service Providers are the back bone of small IT companies around the country. With services like Network Engineering, System Engineering, and fully staffed help desk that operates 24/7, it's no wonder why Connexant is picked over others.
+	</p>
+</section>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("TopNavBar").style.top = "0";
+  } else {
+    document.getElementById("TopNavBar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+</body>
+</html>
