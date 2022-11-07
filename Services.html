@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+
+</head>
+<body>
+<!--
+<p style="background-image: url('
+-->
+<div id="TopNavBar">
+	<a href="index.html" rel="noopener no referrer">Home</a>
+	<a href="Services.html" rel="noopener no referrer" onclick="return false;">Services</a>
+	<a href="Contact.html" rel="noopener no referrer">Contact</a>
+	<p style="float: left; color: white; padding-left: 15px;">Connexant</p>
+</div>
+
+<section id="MainHeadingSection">
+<h1 id="MainHeading">Connexant</h1>
+<h3 style="text-align: center">A Managed Service Provider</h3>
+</section>
+
+<section class="HeadingSectionBlueNetworking">
+	<h2 style="text-align: left;">Network Engineering</h2>
+	<img id="NetworkImage" src="NetworkEngineering.jpg" alt="Networking Equipment">
+	<p>
+	When networks need configuration and you are not sure where to turn, our team of Network Engineers are able to help. With 4 Engineers on the team, they will be able to assist your company whenever needed.
+	</p>
+</section>
+
+<section class="HeadingSectionSystemEngineering">
+	<h2 style="text-align: right;">System Engineering</h2>
+	<img id="SystemImage" src="SystemEngineering.jpg" alt="DataCenter">
+	<p>
+	Connexant System Engineers are dedicated to optimizing your company’s computer storage needs. Engineers are also fluent in Microsoft Windows Active Directory and can help to get your company set to best practices.
+	</p>
+</section>
+
+<section class="HeadingSectionBlueSecurity">
+	<h2 style="text-align: left;">Security Engineering</h2>
+	<img id="SecurityImage" src="Security.jpg" alt="Cybersecurity">
+	<p>
+	With the ever-increasing security threat being on the internet, a security team is an important addition to your company. Connexant Security Engineers are fluent in security threats that pose a threat to your company.
+	</p>
+</section>
+
+<section class="HeadingSectionHelpdesk">
+	<h2 style="text-align: right;">Help Desk</h2>
+	<img id="HelpdeskImage" src="Helpdesk.jpg" alt="Helpdesk">
+	<p>
+	A 24/7 helpdesk is needed to get a company to operate efficiently. Our helpdesk will receive calls from users, troubleshoot issues, and involve level two technicians and engineers where needed.
+	</p>
+</section>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("TopNavBar").style.top = "0";
+  } else {
+    document.getElementById("TopNavBar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+<div id="BottomNavBar">
+	<p>123 N. Connection St. Logan, UT 84321	(800)123-4567</p>
+</div>
+
+</body>
+</html>
